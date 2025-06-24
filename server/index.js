@@ -9,9 +9,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const authRoutes = require('./routes/authRoutes');
-const blogRoutes = require('./routes/blogRoutes');
-const commentRoutes = require('./routes/commentRoutes');
+const authRoutes = require('./Routes/authRoutes');
+const blogRoutes = require('./Routes/blogRoutes');
+const commentRoutes = require('./Routes/commentRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/blogs', blogRoutes);
