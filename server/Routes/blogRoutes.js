@@ -3,7 +3,7 @@ const router = express.Router();
 const { protect, admin } = require('../middleware/auth');
 const {
   createBlog, getAllBlogs, getBlogById, updateBlog, deleteBlog
-} = require('../controllers/blogController');
+} = require('../Controllers/blogController');
 
 router.get('/', getAllBlogs);
 router.get('/:id', getBlogById);
